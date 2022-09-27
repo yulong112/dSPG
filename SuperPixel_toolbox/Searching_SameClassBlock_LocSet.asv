@@ -1,0 +1,50 @@
+function [matching_set,border_set]=Searching_SameClassBlock_LocSet(centerloc,TruthMap)
+TruthMap1D=TruthMap(:);
+objectlabel=TruthMap1D(centerloc);
+
+[Height,Width]=size(TruthMap);
+[centerYCoord, centerXCoord] = f1DTo2DCoord([Height, Width],centerloc);
+updated_searching_center_set=[centerloc];
+matching_set=[];
+border_set=[centerloc];
+used_set=[centerloc];
+while 1
+    candidateLocSet=[];
+    border_candi_set=[];
+    show_updated_searching_center_set=zeros(length(TruthMap1D),1);
+    show_updated_searching_center_set(updated_searching_center_set)=1;
+    show_updated_searching_center_set=reshape(show_updated_searching_center_set,Height,Width);
+    
+    for search_i=1:length(updated_searching_center_set)
+        [TempYCoord, TempXCoord] = f1DTo2DCoord([Height, Width],updated_searching_center_set(search_i));
+        
+        candidateXCoord=[TempXCoord;TempXCoord;TempXCoord-1;TempXCoord+1];
+        candidateYCoord=[TempYCoord-1;TempYCoord+1;TempYCoord;TempYCoord];
+        borderFilter=(candidateXCoord>=1)&(candidateXCoord<=Width)&(candidateYCoord>=1)&(candidateYCoord<=Height);
+        candidateXCoord=candidateXCoord(borderFilter);
+        candidateYCoord=candidateYCoord(borderFilter);
+        
+        candidateLocSet_tmp=(candidateXCoord-1)*Height+candidateYCoord;
+        
+        if ~isempty(find(TruthMap1D(candidateLocSet_tmp)~=objectlabel, 1))
+            border_candi_set=[border_candi_set;updated_searching_center_set(search_i)];
+        end
+        repetitionFilter=~ismember(candidateLocSet_tmp,used_set);
+        candidateLocSet_tmp=candidateLocSet_tmp(repetitionFilter);
+        
+        candidateLocSet=[candidateLocSet;candidateLocSet_tmp];
+    end
+    candidateLocSet=unique(candidateLocSet);
+    used_set=[used_set;candidateLocSet];
+    
+    matchFilter=TruthMap1D(candidateLocSet)==objectlabel;
+    SameClassBlock_LocSet=candidateLocSet(matchFilter);
+    border_set=[border_set;border_candi_set];
+    
+    if isempty(SameClassBlock_LocSet)
+        break;
+    end
+    
+    matching_set=[matching_set;SameClassBlock_LocSet];
+    updated_searching_center_set=SameClassBlock_LocSet;
+end
