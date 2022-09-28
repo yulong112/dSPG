@@ -11,8 +11,6 @@
 %   Within_Superpixel_Graph.m   -  Matlab function for within-superpixel graph
 %  Between_Superpixel_Graph.m   -  Matlab function for between-superpixel graph
 % 
-%   IndianaPine.mat,IndianaPine_LabelMap.mat - Matlab data file with AVIRIS
-%                                            Indiana Pines dataset
 %
 %             Graph_toolbox   -   Toolbox built for Graph computation
 %        SuperPixel_toolbox   -   Toolbox built for superpixel segmentation
