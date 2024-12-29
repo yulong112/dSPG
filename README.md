@@ -14,7 +14,7 @@ Between_Superpixel_Graph.m   -  Matlab function for between-superpixel graph
 
 The  dSPG  is  the combination of within-superpixel graph and between-superpixel graph. 
 The newly proposed within-superpixel graph is aimed at disconnecting pixels belonging to different classes in a superpixel, so as to decrease inter-class connection weights. 
-The betweensuperpixel graph attempts to connect spectral adjacent superpixels to increase the intra-class subset connections.
+The between-superpixel graph attempts to connect spectral adjacent superpixels to increase the intra-class subset connections.
 
 ## Results
 
