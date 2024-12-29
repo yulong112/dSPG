@@ -40,3 +40,12 @@ If you use [dSPG](https://github.com/yulong112/dSPG) code in your research, we w
   pages={1-18},
   doi={10.1109/TGRS.2024.3439434}}
 
+	@article{roy2019hybridsn,
+        	title={HybridSN: Exploring 3D-2D CNN Feature Hierarchy for Hyperspectral Image Classification},
+		author={Roy, Swalpa Kumar and Krishna, Gopal and Dubey, Shiv Ram and Chaudhuri, Bidyut B},
+		journal={IEEE Geoscience and Remote Sensing Letters},
+		volume={17},
+		no.={2},
+		pp.={277-281},
+		year={2020}
+		}
