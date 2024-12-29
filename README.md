@@ -30,15 +30,15 @@ Fig.1  The Indian Pines dataset classification result (Overall Accuracy 85.48%) 
 
 If you use [dSPG](https://github.com/yulong112/dSPG) code in your research, we would appreciate your citation to the following paper:
 
-@ARTICLE{yu2024dSPG,
-  author={Yu, Long and Li, Jun and He, Lin and Plaza, Antonio and Wang, Lizhe and Tang, Zhonghui and Zhuo, Li and Yuan, Yuchen},
-  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
-  title={dSPG: A New Discriminant Superpixel Graph Regularizer and Convolutional Network for Hyperspectral Image Classification}, 
-  year={2024},
-  volume={62},
-  number={},
-  pages={1-18},
-  doi={10.1109/TGRS.2024.3439434}}
+	@ARTICLE{yu2024dSPG,
+	  author={Yu, Long and Li, Jun and He, Lin and Plaza, Antonio and Wang, Lizhe and Tang, Zhonghui and Zhuo, Li and Yuan, Yuchen},
+	  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+	  title={dSPG: A New Discriminant Superpixel Graph Regularizer and Convolutional Network for Hyperspectral Image Classification}, 
+	  year={2024},
+	  volume={62},
+	  number={},
+	  pages={1-18},
+	  doi={10.1109/TGRS.2024.3439434}}
 
 	@article{roy2019hybridsn,
         	title={HybridSN: Exploring 3D-2D CNN Feature Hierarchy for Hyperspectral Image Classification},
