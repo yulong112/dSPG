@@ -4,11 +4,11 @@
 
 Files:
 
-                 demo_dSPG.m   -  Matlab demo over real AVIRIS Indian Pines dataset
+demo_dSPG.m   -  Matlab demo over real AVIRIS Indian Pines dataset
                  
-   Within_Superpixel_Graph.m   -  Matlab function for within-superpixel graph
+Within_Superpixel_Graph.m   -  Matlab function for within-superpixel graph
    
-  Between_Superpixel_Graph.m   -  Matlab function for between-superpixel graph
+Between_Superpixel_Graph.m   -  Matlab function for between-superpixel graph
 
 ## Description
 
