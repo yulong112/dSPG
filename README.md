@@ -3,6 +3,7 @@
 ## Matlab Implimentation of dSPG
 
 Files:
+
                  demo_dSPG.m   -  Matlab demo over real AVIRIS Indian Pines dataset
                  
    Within_Superpixel_Graph.m   -  Matlab function for within-superpixel graph
@@ -19,9 +20,9 @@ The betweensuperpixel graph attempts to connect spectral adjacent superpixels t
 
 ### Indian Pines (IP) dataset
 
-<img src="figure/IP_FC.jpg" width="200" height="200"/> <img src="figure/IP_GT.jpg" width="200" height="200"/> <img src="figure/IP_dSPG.jpg" width="200" height="200"/>
+<img src="figure/IP_FC.png" width="200" height="200"/> <img src="figure/IP_GT.png" width="200" height="200"/> <img src="figure/IP_dSPG.png" width="200" height="200"/>
 
-<img src="figure/IP_legend.jpg" width="600" height="50"/>
+<img src="figure/IP_legend.png" width="600" height="50"/>
 
 Fig.1  The Indian Pines dataset classification result (Overall Accuracy 85.48%) of dSPG using 5 labeled samples per class. (a) False color composition. (b) Ground truth. (c) Classification map. 
 
