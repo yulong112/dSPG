@@ -40,7 +40,7 @@ Fig.1  The Indian Pines dataset classification result (Overall Accuracy 85.48%) 
 <img src="figure/ZY-HH-dSPG.png" width="700" height="230"/> 
 <img src="figure/ZY-HH_legend.png" width="400" height="30"/>
 
-Fig.2  The ZY1-02D-HongHu dataset classification result (Overall Accuracy 85.48%) of dSPG using 5 labeled samples per class. (a) False color composition. (b) Ground truth. (c) Classification map. 
+Fig.2  The ZY1-02D-HongHu dataset classification result (Overall Accuracy 99.06%) of dSPG using 5 labeled samples per class. (a) False color composition. (b) Ground truth. (c) Classification map. 
 
 ## Citation
 
