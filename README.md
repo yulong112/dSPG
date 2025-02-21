@@ -28,6 +28,20 @@ The between-superpixel graph attempts to connect spectral adjacent superpixels t
 
 Fig.1  The Indian Pines dataset classification result (Overall Accuracy 85.48%) of dSPG using 5 labeled samples per class. (a) False color composition. (b) Ground truth. (c) Classification map. 
 
+
+### ZY1-02D-HongHu dataset
+
+[ref]: https://github.com/yulong112/ZY1_02D_HongHu
+
+[ZY1-02D-HongHu数据集下载链接][ref]
+
+<img src="figure/false-color.png" width="700" height="230"/> 
+<img src="figure/ZY-HH-GT.png" width="700" height="230"/> 
+<img src="figure/ZY-HH-dSPG.png" width="700" height="230"/> 
+<img src="figure/ZY-HH_legend.png" width="400" height="30"/>
+
+Fig.2  The ZY1-02D-HongHu dataset classification result (Overall Accuracy 85.48%) of dSPG using 5 labeled samples per class. (a) False color composition. (b) Ground truth. (c) Classification map. 
+
 ## Citation
 
 If you use [dSPG](https://github.com/yulong112/dSPG) code in your research, we would appreciate your citation to the following paper:
